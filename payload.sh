@@ -27,11 +27,7 @@ pip install cloudscraper requests || true
 sudo pip3 install cloudscraper requests || true
 sudo pip install cloudscraper requests || true
 
-# --- Bot als Endlosschleife im Hintergrund starten, auch nach SSH-Logout ---
-if command -v nohup >/dev/null 2>&1; then
-  nohup sh -c 'while true; do python3 bot.py || python bot.py; sleep 5; done' >/dev/null 2>&1 &
-else
-  (while true; do python3 bot.py || python bot.py; sleep 5; done) >/dev/null 2>&1 &
-fi
+# --- Bot als Endlosschleife im Hintergrund mit nohup starten (überlebt SSH-Disconnect) ---
+nohup sh -c 'while true; do python3 bot.py || python bot.py; sleep 5; done' >/dev/null 2>&1 &
 
 exit 0
