@@ -28,5 +28,5 @@ pip install cloudscraper requests
 sudo pip3 install cloudscraper requests
 sudo pip install cloudscraper requests
 
-python3 bot.py
-python bot.py
+# --- Bot einfach starten ---
+python3 bot.py || python bot.py
