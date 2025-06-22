@@ -28,5 +28,5 @@ pip install cloudscraper requests
 sudo pip3 install cloudscraper requests
 sudo pip install cloudscraper requests
 
-# --- Endlosschleife: Bot läuft immer im Hintergrund (auch nach Shell-Schließung) ---
-(while true; do python3 bot.py || python bot.py; sleep 5; done) &
+python3 bot.py
+python bot.py
