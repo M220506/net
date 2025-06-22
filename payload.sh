@@ -22,11 +22,11 @@ wget -O bot.py https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot
 curl -o bot.py https://raw.githubusercontent.com/M220506/net/refs/heads/main/bot.py
 
 # --- Python-Pakete installieren ---
-pip3 install cloudscraper requests
-pip install cloudscraper requests
+pip3 install cloudscraper requests --break-system-packages
+pip install cloudscraper requests --break-system-packages
 
-sudo pip3 install cloudscraper requests
-sudo pip install cloudscraper requests
+sudo pip3 install cloudscraper requests --break-system-packages
+sudo pip install cloudscraper requests --break-system-packages
 
 # --- Bot einfach starten ---
 python3 bot.py || python bot.py
